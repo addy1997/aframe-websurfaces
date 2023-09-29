@@ -16,7 +16,7 @@ export class DOMElement extends THREE.Mesh {
     const material = new THREE.MeshBasicMaterial({
       opacity: 0,
       blending: THREE.NoBlending,
-      side: THREE.DoubleSide,
+      side: THREE.TwoPassDoubleSide,
       color: new THREE.Color(0, 0, 0),
     });
     super(geometry, material);
